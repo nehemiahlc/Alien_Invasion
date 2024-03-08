@@ -20,7 +20,7 @@ This is a simple game called Alien Invasion, created using Python and the Pygame
    - The game speeds up as you progress through levels.
 
 4. **Starting the Game**:
-   - Click the "Play" button to start the game.
+   - Click the "Play" button or 'p' to start the game.
    - After starting, use the controls mentioned above to play.
 
 ## Requirements
