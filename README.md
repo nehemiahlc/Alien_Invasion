@@ -1,5 +1,3 @@
-# Alien_Invasion
-
 # Alien Invasion Game
 
 This is a simple game called Alien Invasion, created using Python and the Pygame library. The game is based on the third edition of the book "Python Crash Course" by Eric Matthes.
