@@ -37,6 +37,7 @@ You will also need the following scripts, which are included in the project dire
 - `ship.py`
 - `bullet.py`
 - `alien.py`
+- `images`
 
 Make sure all these files are present in the same directory as `alien_invasion.py`.
 
