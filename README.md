@@ -45,7 +45,7 @@ Make sure all these files are present in the same directory as `alien_invasion.p
 To start the game, run the `alien_invasion.py` file. Make sure you have Python and Pygame installed on your system.
 
 Ex:
-python alien_invasion.py
-python3 alien_invasion.py
+- python alien_invasion.py
+- python3 alien_invasion.py
 
 Enjoy playing Alien Invasion!
