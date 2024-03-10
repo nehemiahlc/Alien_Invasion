@@ -8,6 +8,7 @@ from button import Button
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
+from pathlib import Path
 
 class AlienInvasion:
     '''Overall class to manage game assets and behavior.'''
@@ -24,6 +25,8 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode(
             (self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
+
+       
 
         # Create an instance to store game statisitcs, and create a scoreboard.
         self.stats = GameStats(self)
@@ -68,6 +71,7 @@ class AlienInvasion:
                 mouse_pos = pygame.mouse.get_pos()
                 self._check_play_button(mouse_pos)
 
+
     def _check_play_button(self, mouse_pos):
         '''Start a new game when the player clicks Play.'''
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
@@ -89,6 +93,9 @@ class AlienInvasion:
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
         elif event.key == pygame.K_q: # Adding 'Pressing Q to quit'
+            self.sb.check_highest_level()
+            self.sb.write_highest_level_to_file()
+            self.sb.write_high_score_to_file()
             sys.exit()
         elif event.key == pygame.K_SPACE:
             self._fire_bullet()
